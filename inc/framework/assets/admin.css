@@ -1,0 +1,1148 @@
+/* ========================================
+   Fox Framework Admin Styles - 升级版
+   左侧菜单 + 右侧内容布局
+   ======================================== */
+
+/* 重置WordPress默认样式 */
+.fox-admin-wrap {
+    margin: 0 0 0 -20px;
+    padding: 0;
+    background: #f0f0f1;
+}
+
+.fox-admin-wrap h1,
+.fox-admin-wrap h2 {
+    padding: 0;
+    margin: 0;
+}
+
+/* 顶部标题区域 */
+.fox-admin-header {
+    background: linear-gradient(135deg, #2271b1 0%, #135e96 100%);
+    color: #fff;
+    padding: 30px 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fox-admin-header h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 8px 0;
+    letter-spacing: -0.02em;
+}
+
+.fox-admin-header .description {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    margin: 0;
+}
+
+/* 主容器 - 左右布局 */
+.fox-admin-container {
+    display: flex;
+    min-height: calc(100vh - 160px);
+    background: #f0f0f1;
+}
+
+/* 左侧菜单栏 */
+.fox-admin-sidebar {
+    width: 260px;
+    background: #fff;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 32px;
+    height: calc(100vh - 32px);
+    overflow-y: auto;
+}
+
+/* 菜单导航 */
+.fox-nav-menu {
+    padding: 20px 0;
+}
+
+.fox-nav-item {
+    display: flex;
+    align-items: center;
+    padding: 14px 24px;
+    color: #50575e;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-left: 3px solid transparent;
+    position: relative;
+}
+
+.fox-nav-item:hover {
+    background: #f6f7f7;
+    color: #2271b1;
+    padding-left: 28px;
+}
+
+.fox-nav-item.active {
+    background: linear-gradient(90deg, #e5f5fa 0%, #f9f9f9 100%);
+    color: #2271b1;
+    border-left-color: #2271b1;
+    font-weight: 600;
+}
+
+.fox-nav-item.active::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 60%;
+    background: #2271b1;
+    border-radius: 3px 0 0 3px;
+}
+
+.fox-nav-icon {
+    font-size: 20px;
+    margin-right: 12px;
+    width: 24px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.fox-nav-label {
+    font-size: 14px;
+    letter-spacing: 0.01em;
+}
+
+/* 右侧内容区域 */
+.fox-admin-content {
+    flex: 1;
+    padding: 30px 40px;
+    background: #f0f0f1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: calc(100vh - 160px);
+}
+
+/* 内容区域滚动条美化 */
+.fox-admin-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.fox-admin-content::-webkit-scrollbar-track {
+    background: #f0f0f1;
+}
+
+.fox-admin-content::-webkit-scrollbar-thumb {
+    background: #c3c4c7;
+    border-radius: 4px;
+}
+
+.fox-admin-content::-webkit-scrollbar-thumb:hover {
+    background: #8c8f94;
+}
+
+/* 表单容器 */
+#fox-options-form {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    position: relative;
+}
+
+/* 分组内容容器 */
+.fox-section-content {
+    animation: fadeInContent 0.3s ease;
+}
+
+@keyframes fadeInContent {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 切换动画状态 */
+#fox-options-form.fox-switching {
+    pointer-events: none;
+    opacity: 0.6;
+    transition: opacity 0.15s ease;
+}
+
+/* 切换指示器（可选） */
+#fox-options-form.fox-switching::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #2271b1;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    z-index: 10;
+}
+
+/* 表单表格样式 */
+.fox-admin-content .form-table {
+    margin: 0;
+    border: none;
+}
+
+.fox-admin-content .form-table th {
+    padding: 16px 20px 16px 0;
+    font-weight: 600;
+    color: #1d2327;
+    font-size: 14px;
+    width: 200px;
+    vertical-align: top;
+    padding-top: 20px;
+    user-select: text;
+    cursor: default;
+}
+
+.fox-admin-content .form-table th label {
+    cursor: default;
+    user-select: text;
+    color: inherit;
+    transition: none;
+}
+
+.fox-admin-content .form-table th label:hover {
+    color: inherit;
+}
+
+.fox-admin-content .form-table td {
+    padding: 16px 0;
+    vertical-align: top;
+}
+
+.fox-admin-content .form-table tr {
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.fox-admin-content .form-table tr:last-child {
+    border-bottom: none;
+}
+
+/* 输入框统一样式 */
+.fox-admin-content input[type="text"],
+.fox-admin-content input[type="number"],
+.fox-admin-content input[type="email"],
+.fox-admin-content input[type="url"],
+.fox-admin-content textarea,
+.fox-admin-content select {
+    padding: 10px 14px;
+    border: 1px solid #dcdcde;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 500px;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+.fox-admin-content input[type="text"]:focus,
+.fox-admin-content input[type="number"]:focus,
+.fox-admin-content input[type="email"]:focus,
+.fox-admin-content input[type="url"]:focus,
+.fox-admin-content textarea:focus,
+.fox-admin-content select:focus {
+    border-color: #2271b1;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(34, 113, 177, 0.1);
+}
+
+.fox-admin-content textarea {
+    max-width: 600px;
+    min-height: 120px;
+    line-height: 1.6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    resize: vertical;
+}
+
+/* 底部按钮区域 */
+.fox-admin-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #f0f0f1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.fox-admin-footer .button-primary {
+    background: linear-gradient(135deg, #2271b1 0%, #135e96 100%);
+    border: none;
+    color: #fff;
+    padding: 12px 32px;
+    font-size: 15px;
+    font-weight: 600;
+    height: auto;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(34, 113, 177, 0.2);
+}
+
+.fox-admin-footer .button-primary:hover {
+    background: linear-gradient(135deg, #135e96 0%, #0f4c78 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(34, 113, 177, 0.3);
+}
+
+.fox-admin-footer .button-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(34, 113, 177, 0.2);
+}
+
+.fox-admin-footer .fox-reset-button {
+    padding: 12px 24px;
+    font-size: 14px;
+    border-radius: 6px;
+    background: #f6f7f7;
+    border: 1px solid #dcdcde;
+    color: #50575e;
+    transition: all 0.3s ease;
+}
+
+.fox-admin-footer .fox-reset-button:hover {
+    background: #fff;
+    border-color: #c3c4c7;
+    color: #2c3338;
+}
+
+/* ========== 图片上传组件 ========== */
+.fox-image-upload-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* 图片URL输入框 */
+.fox-image-url-input {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* 按钮容器 */
+.fox-image-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* 上传按钮 */
+.fox-upload-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+}
+
+.fox-upload-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(34, 113, 177, 0.3);
+}
+
+/* 删除按钮 */
+.fox-remove-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+    border-color: #d63638;
+}
+
+.fox-remove-button:hover {
+    background: #d63638;
+    border-color: #d63638;
+    color: #fff !important;
+    transform: translateY(-1px);
+}
+
+.fox-remove-button .dashicons {
+    color: inherit;
+}
+
+/* 图片预览容器 */
+.fox-image-preview {
+    margin-top: 8px;
+}
+
+.fox-image-preview-container {
+    position: relative;
+    display: inline-block;
+    max-width: 280px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.fox-image-preview-container:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.fox-image-preview-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+/* 图片悬停遮罩 */
+.fox-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.fox-image-preview-container:hover .fox-image-overlay {
+    opacity: 1;
+}
+
+.fox-image-overlay .dashicons {
+    color: #fff;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+/* 旧样式兼容（如果还有使用） */
+.preview-image {
+    margin-top: 15px;
+}
+
+.preview-image img {
+    max-width: 250px;
+    height: auto;
+    border: 3px solid #f0f0f1;
+    border-radius: 8px;
+    padding: 8px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.preview-image img:hover {
+    border-color: #2271b1;
+    box-shadow: 0 4px 16px rgba(34, 113, 177, 0.15);
+}
+
+/* Switch 开关样式 */
+.fox-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 18px;
+}
+
+.fox-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.fox-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #dc3545;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+}
+
+/* 小矩形滑块 */
+.fox-slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* 开关打开状态 - 绿色 */
+.fox-switch input:checked + .fox-slider {
+    background: #28a745;
+}
+
+.fox-switch input:checked + .fox-slider:before {
+    left: calc(100% - 15px);
+}
+
+/* 悬停效果 */
+.fox-switch:hover .fox-slider {
+    opacity: 0.9;
+}
+
+/* 焦点状态 */
+.fox-switch input:focus + .fox-slider {
+    box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.25);
+}
+
+/* 禁用状态 */
+.fox-switch input:disabled + .fox-slider {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.fox-switch input:disabled + .fox-slider:before {
+    background: #f0f0f0;
+}
+
+/* Slider 滑块样式 */
+.fox-slider-value {
+    margin-left: 15px;
+    font-weight: 600;
+    color: #2271b1;
+    background: linear-gradient(135deg, #e5f5fa 0%, #f0f6fc 100%);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(34, 113, 177, 0.1);
+}
+
+input[type="range"] {
+    width: 100%;
+    max-width: 400px;
+    height: 8px;
+    background: linear-gradient(to right, #e5f5fa 0%, #2271b1 100%);
+    border-radius: 4px;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    background: linear-gradient(135deg, #2271b1 0%, #135e96 100%);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(34, 113, 177, 0.3);
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 12px rgba(34, 113, 177, 0.4);
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    background: linear-gradient(135deg, #2271b1 0%, #135e96 100%);
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(34, 113, 177, 0.3);
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 12px rgba(34, 113, 177, 0.4);
+}
+
+/* Content 字段样式 */
+.fox-content-field {
+    background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+    border-left: 4px solid #2271b1;
+    padding: 20px 24px;
+    margin: 20px 0;
+    line-height: 1.8;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.fox-content-field h4 {
+    margin: 0 0 12px 0;
+    color: #1d2327;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.fox-content-field p {
+    margin: 8px 0;
+    color: #2c3338;
+}
+
+.fox-content-field ol,
+.fox-content-field ul {
+    margin: 12px 0;
+    padding-left: 24px;
+}
+
+.fox-content-field li {
+    margin: 6px 0;
+    color: #2c3338;
+}
+
+.fox-usage-info {
+    background: #fff;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+/* Heading 字段样式 */
+.fox-heading-field {
+    margin: 30px 0 20px;
+    padding: 0 0 12px 0;
+    border-bottom: 2px solid #f0f0f1;
+    position: relative;
+}
+
+.fox-heading-field:first-child {
+    margin-top: 0;
+}
+
+.fox-heading-field h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1d2327;
+    letter-spacing: -0.01em;
+}
+
+.fox-heading-field:after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, #2271b1 0%, #72aee6 100%);
+}
+
+/* Submessage 字段样式 */
+.fox-submessage-field {
+    padding: 16px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    line-height: 1.7;
+    font-size: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.fox-submessage-normal {
+    background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+    border-left: 4px solid #72aee6;
+    color: #2c3338;
+}
+
+.fox-submessage-info {
+    background: linear-gradient(135deg, #e5f5fa 0%, #f0f9fc 100%);
+    border-left: 4px solid #00a0d2;
+    color: #005a87;
+}
+
+.fox-submessage-success {
+    background: linear-gradient(135deg, #ecf7ed 0%, #f5fbf5 100%);
+    border-left: 4px solid #46b450;
+    color: #2f6f32;
+}
+
+.fox-submessage-warning {
+    background: linear-gradient(135deg, #fcf9e8 0%, #fefdf4 100%);
+    border-left: 4px solid #f0b849;
+    color: #8a6116;
+}
+
+.fox-submessage-error {
+    background: linear-gradient(135deg, #f8d7da 0%, #fde8ea 100%);
+    border-left: 4px solid #dc3232;
+    color: #8a1f1f;
+}
+
+/* Code Editor 字段样式 */
+.fox-code-editor {
+    font-family: 'Monaco', 'Menlo', 'Consolas', 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    tab-size: 4;
+    border: 2px solid #dcdcde;
+    border-radius: 8px;
+    padding: 16px;
+    background: #f6f7f7;
+    color: #2c3338;
+    min-height: 200px;
+    resize: vertical;
+    width: 100%;
+    max-width: 700px;
+}
+
+.fox-code-editor:focus {
+    background: #fff;
+    border-color: #2271b1;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(34, 113, 177, 0.1);
+}
+
+/* Select 下拉框样式 */
+select {
+    cursor: pointer;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%232271b1" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 20px;
+    padding-right: 40px;
+}
+
+/* Checkbox 和 Radio 样式 */
+input[type="checkbox"],
+input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    accent-color: #2271b1;
+}
+
+label {
+    cursor: default;
+    user-select: text;
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 0;
+    transition: none;
+}
+
+label:hover {
+    color: inherit;
+}
+
+/* ========== 颜色选择器 ========== */
+.wp-picker-container {
+    margin-top: 0;
+}
+
+.wp-picker-container .wp-color-result {
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #dcdcde;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.wp-picker-container .wp-color-result:hover {
+    border-color: #2271b1;
+    box-shadow: 0 2px 6px rgba(34, 113, 177, 0.2);
+    transform: translateY(-1px);
+}
+
+.wp-picker-container .wp-color-result:after {
+    font-size: 14px;
+    line-height: 40px;
+    height: 40px;
+    border-radius: 0 6px 6px 0;
+}
+
+.wp-picker-container input[type="text"].wp-color-picker {
+    width: 100px;
+    height: 40px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #dcdcde;
+    font-size: 13px;
+    font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+}
+
+.wp-picker-container input[type="text"].wp-color-picker:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+.wp-picker-container .wp-picker-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.wp-picker-container .button.wp-picker-clear {
+    height: 40px;
+    line-height: 38px;
+    padding: 0 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.wp-picker-container .button.wp-picker-clear:hover {
+    background: #f0f0f1;
+    border-color: #c3c4c7;
+    transform: translateY(-1px);
+}
+
+.wp-picker-container .button.wp-picker-default {
+    height: 40px;
+    line-height: 38px;
+    padding: 0 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.wp-picker-container .button.wp-picker-default:hover {
+    background: #f0f0f1;
+    border-color: #c3c4c7;
+    transform: translateY(-1px);
+}
+
+/* 颜色选择器弹出面板 */
+.wp-picker-holder {
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid #dcdcde;
+    overflow: hidden;
+}
+
+.wp-picker-holder .iris-picker {
+    border-radius: 8px 8px 0 0;
+}
+
+/* 旧样式（兼容） */
+.fox-color-picker {
+    min-width: 120px !important;
+    max-width: 120px;
+    height: 45px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* 空消息样式 */
+.fox-empty-message {
+    padding: 40px;
+    text-align: center;
+    color: #8c8f94;
+    font-size: 15px;
+    background: #fafafa;
+    border-radius: 8px;
+    border: 2px dashed #dcdcde;
+}
+
+/* 成功提示动画 */
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.updated,
+.notice {
+    animation: slideInDown 0.4s ease;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 1280px) {
+    .fox-admin-sidebar {
+        width: 220px;
+    }
+    
+    .fox-admin-content {
+        padding: 25px 30px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .fox-admin-container {
+        flex-direction: column;
+    }
+    
+    .fox-admin-sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    
+    .fox-nav-menu {
+        display: flex;
+        overflow-x: auto;
+        padding: 0;
+    }
+    
+    .fox-nav-item {
+        flex-direction: column;
+        padding: 16px 20px;
+        text-align: center;
+        min-width: 100px;
+        border-left: none;
+        border-bottom: 3px solid transparent;
+    }
+    
+    .fox-nav-item.active {
+        border-left: none;
+        border-bottom-color: #2271b1;
+    }
+    
+    .fox-nav-item.active::before {
+        display: none;
+    }
+    
+    .fox-nav-icon {
+        margin: 0 0 6px 0;
+        font-size: 24px;
+    }
+    
+    .fox-admin-content {
+        padding: 20px;
+    }
+    
+    #fox-options-form {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .fox-admin-header {
+        padding: 20px;
+    }
+    
+    .fox-admin-header h1 {
+        font-size: 24px;
+    }
+    
+    .fox-admin-content .form-table th,
+    .fox-admin-content .form-table td {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .fox-admin-content .form-table th {
+        padding-bottom: 8px;
+        padding-top: 20px;
+    }
+    
+    .fox-admin-content input[type="text"],
+    .fox-admin-content input[type="number"],
+    .fox-admin-content input[type="email"],
+    .fox-admin-content input[type="url"],
+    .fox-admin-content textarea,
+    .fox-admin-content select {
+        max-width: 100%;
+    }
+    
+    .fox-admin-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .fox-admin-footer .button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* 滚动条美化 */
+.fox-admin-sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.fox-admin-sidebar::-webkit-scrollbar-track {
+    background: #f0f0f1;
+}
+
+.fox-admin-sidebar::-webkit-scrollbar-thumb {
+    background: #c3c4c7;
+    border-radius: 3px;
+}
+
+.fox-admin-sidebar::-webkit-scrollbar-thumb:hover {
+    background: #8c8f94;
+}
+
+/* 加载动画 */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.fox-loading {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #2271b1;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* 工具提示 */
+.fox-tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    color: #2271b1;
+    margin-left: 8px;
+}
+
+.fox-tooltip:hover:after {
+    content: attr(data-tip);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1d2327;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    white-space: nowrap;
+    font-size: 13px;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 字段验证错误样式 */
+.fox-field-error {
+    border-color: #dc3232 !important;
+    box-shadow: 0 0 0 3px rgba(220, 50, 50, 0.1) !important;
+}
+
+.fox-field-error:focus {
+    border-color: #dc3232 !important;
+    box-shadow: 0 0 0 3px rgba(220, 50, 50, 0.2) !important;
+}
+
+/* 图片模态框样式 */
+.fox-image-modal {
+    animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* 保存中动画 */
+@keyframes fox-saving-pulse {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* 保存中提示样式 */
+.fox-saving-notice {
+    border-left: 4px solid #2271b1;
+    background: #f0f6fc;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    padding: 12px 20px;
+    border-radius: 4px;
+    animation: fox-notice-slide-in 0.3s ease-out;
+}
+
+.fox-saving-notice p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #005a87;
+}
+
+.fox-saving-notice .dashicons {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+/* 保存成功提示样式 */
+.fox-save-notice {
+    border-left: 4px solid #46b450;
+    background: #f7fff7;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    padding: 12px 20px;
+    border-radius: 4px;
+    animation: fox-notice-slide-in 0.3s ease-out;
+}
+
+.fox-save-notice p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.fox-save-notice .dashicons {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+@keyframes fox-notice-slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 保存按钮状态 */
+.fox-admin-footer input[type="submit"]:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.fox-admin-footer input[type="submit"]:not(:disabled):hover {
+    background: #135e96;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(34, 113, 177, 0.3);
+    transition: all 0.2s ease;
+}
+
+/* 打印样式 */
+@media print {
+    .fox-admin-header,
+    .fox-admin-sidebar,
+    .fox-admin-footer {
+        display: none;
+    }
+    
+    .fox-admin-container {
+        display: block;
+    }
+    
+    #fox-options-form {
+        box-shadow: none;
+        padding: 0;
+    }
+}

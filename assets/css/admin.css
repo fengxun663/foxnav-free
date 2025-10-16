@@ -1,0 +1,160 @@
+/**
+ * FoxNav 后台样式
+ * 
+ * @package FoxNav
+ */
+
+/* 元框样式优化 */
+.foxnav-meta-box .form-table th,
+.foxnav-seo-box .form-table th {
+    width: 180px;
+    padding: 15px 10px 15px 0;
+    vertical-align: top;
+}
+
+.foxnav-meta-box .form-table td,
+.foxnav-seo-box .form-table td {
+    padding: 15px 10px;
+}
+
+.foxnav-meta-box .required {
+    color: #d63638;
+    font-weight: bold;
+}
+
+/* 媒体上传区域 */
+.foxnav-media-upload {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.foxnav-media-upload .foxnav-media-url {
+    flex: 1;
+    min-width: 300px;
+}
+
+.foxnav-media-preview {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.foxnav-media-preview img {
+    border: 1px solid #ddd;
+    padding: 4px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* 状态复选框 */
+.foxnav-meta-box fieldset label {
+    display: inline-block;
+    margin: 8px 0;
+    padding: 6px 0;
+    font-weight: 500;
+}
+
+.foxnav-meta-box fieldset input[type="checkbox"] {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* SEO字符计数 */
+#seo_title_count,
+#seo_description_count {
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #f0f0f1;
+}
+
+/* 分类编辑页面 */
+.term-category_icon-wrap input,
+.term-category_color-wrap input,
+.term-category_order-wrap input {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* 响应式优化 */
+@media screen and (max-width: 782px) {
+    .foxnav-meta-box .form-table th,
+    .foxnav-seo-box .form-table th {
+        width: 100%;
+        padding: 10px 0 5px;
+    }
+    
+    .foxnav-meta-box .form-table td,
+    .foxnav-seo-box .form-table td {
+        padding: 5px 0 15px;
+    }
+    
+    .foxnav-media-upload {
+        flex-direction: column;
+    }
+    
+    .foxnav-media-upload .foxnav-media-url {
+        width: 100%;
+    }
+}
+
+/* 按钮样式优化 */
+.foxnav-upload-media-btn,
+.foxnav-auto-fetch-favicon,
+.foxnav-auto-screenshot {
+    white-space: nowrap;
+}
+
+.foxnav-auto-fetch-favicon:disabled,
+.foxnav-auto-screenshot:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* 表单描述文字 */
+.foxnav-meta-box .description,
+.foxnav-seo-box .description {
+    color: #646970;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+/* 输入框焦点样式 */
+.foxnav-meta-box input[type="text"]:focus,
+.foxnav-meta-box input[type="url"]:focus,
+.foxnav-meta-box textarea:focus,
+.foxnav-seo-box input[type="text"]:focus,
+.foxnav-seo-box input[type="url"]:focus,
+.foxnav-seo-box textarea:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+/* 加载状态 */
+.foxnav-loading {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #2271b1;
+    border-radius: 50%;
+    animation: foxnav-spin 0.8s linear infinite;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@keyframes foxnav-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+

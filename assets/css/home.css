@@ -1,0 +1,59 @@
+/**
+ * 首页样式优化
+ *
+ * @package FoxNav
+ */
+
+/* 热门推荐标题样式优化 */
+.slider_menu .nav-link.active,
+.slider_menu .nav-link.ajax-home-hot-list.active,
+.slider_menu .nav-link.active.load {
+    color: #fff !important;
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+}
+
+.slider_menu .nav-link.active i,
+.slider_menu .nav-link.ajax-home-hot-list.active i,
+.slider_menu .nav-link.active.load i {
+    color: #fff !important;
+}
+
+/* 确保悬停时也是白色 */
+.slider_menu .nav-link.active:hover,
+.slider_menu .nav-link.ajax-home-hot-list.active:hover,
+.slider_menu .nav-link.active.load:hover {
+    color: #fff !important;
+    background-color: #007bff !important;
+}
+
+/* 非激活状态的链接 */
+.slider_menu .nav-link {
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.slider_menu .nav-link:hover {
+    color: #007bff;
+    background-color: #f0f8ff;
+}
+
+/* 火焰图标颜色 */
+.slider_menu .nav-link .fa-fire {
+    color: inherit;
+}
+
+/* 滑块背景（anchor）优化 */
+.slider_menu .anchor {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+    .slider_menu .nav-link {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+

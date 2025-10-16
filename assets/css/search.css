@@ -1,0 +1,255 @@
+/**
+ * 搜索结果页面样式
+ *
+ * @package FoxNav
+ */
+
+/* 搜索结果页面头部 */
+.search-results-header {
+    padding: 20px 0;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.search-results-header .page-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.search-results-header .search-keyword {
+    color: #007bff;
+    font-weight: 700;
+}
+
+.search-results-header .search-results-count {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+/* 搜索结果列表 */
+.search-results {
+    margin-top: 20px;
+}
+
+.search-results .url-card {
+    margin-bottom: 20px;
+}
+
+.search-results .url-card .card {
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.search-results .url-card .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 无结果提示 */
+.no-results {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.no-results .alert {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 30px;
+    background: #f8f9fa;
+    border: none;
+    border-radius: 8px;
+}
+
+.no-results h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.no-results p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.no-results .search-suggestions h4,
+.no-results .popular-sites h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.no-results .search-suggestions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.no-results .search-suggestions li {
+    padding: 8px 0;
+    color: #666;
+    position: relative;
+    padding-left: 20px;
+}
+
+.no-results .search-suggestions li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* 分页样式 */
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 5px;
+}
+
+.pagination .page-numbers {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.pagination .page-numbers:hover {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.pagination .page-numbers.current {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    font-weight: 600;
+}
+
+.pagination .page-numbers.dots {
+    border: none;
+    background: transparent;
+    pointer-events: none;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .search-results-header .page-title {
+        font-size: 22px;
+    }
+    
+    .no-results {
+        padding: 40px 15px;
+    }
+    
+    .no-results .alert {
+        padding: 20px;
+    }
+}
+
+/* 网址卡片细节优化 */
+.search-results .url-img img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* 加载动画 */
+.search-loading {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}
+
+.search-loading:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 底部信息区域样式 */
+.friendlink {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-inner {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.footer-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-mini-img {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.footer-mini-img p {
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+.footer-mini-img img {
+    max-width: 120px;
+    height: auto;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-copyright a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-copyright a:hover {
+    text-decoration: underline;
+}
+
+/* 底部区域响应式 */
+@media (max-width: 768px) {
+    .footer-text .row > div {
+        text-align: center !important;
+    }
+    
+    .footer-mini-img {
+        margin: 10px 5px;
+    }
+}
+

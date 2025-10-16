@@ -1,0 +1,416 @@
+ <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#f9f9f9">
+    <title>404 Not Found - AI导航网</title>
+    <meta name="keywords" content="ai导航,ai工具,AIGC,ai,ChatGPT,ai产品,人工智能" />
+    <meta name="description" content="凯歌AI导航：一站式全面AIGC网站，提供AI绘画、ai智能对话、ai翻译、ai提示词、ai工具、ai智能写作、3D设计、ai视频、ai语音等专业服务。为用户提供一个集合了国内外优秀AI工具的平台" />
+    <link rel='stylesheet' id='classic-theme-styles-css' href='/nzcms/plugin/dir_kaige/static/css/classic-themes.min.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='iconfont-css' href='/nzcms/plugin/dir_kaige/static/css/iconfont.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='font-awesome-css' href='/nzcms/plugin/dir_kaige/static/css/all.min.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='font-awesome4-css' href='/nzcms/plugin/dir_kaige/static/css/v4-shims.min.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='bootstrap-css' href='/nzcms/plugin/dir_kaige/static/css/bootstrap.min.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='swiper-css' href='/nzcms/plugin/dir_kaige/static/css/swiper-bundle.min.css' type='text/css' media='all'>
+    <link rel='stylesheet' id='style-css' href='/nzcms/plugin/dir_kaige/static/css/style.min.css' type='text/css' media='all'>
+     <link rel='stylesheet' id='style-css' href='/nzcms/plugin/dir_kaige/static/css/diy.css' type='text/css' media='all'>
+    <script src="/static/default/jquery.3.14.min.js"></script>
+    <script src="/static/default/popper.min.js"></script>
+    <script src="/static/default/bootstrap441.min.js"></script>
+    <script src="/static/js/layer/layer.js?v=202404251706"></script>
+    <script>var webdir = "/" , weburl = "https://www.kaigeai.com/", memurl = '/member', web_name = "AI导航网",_surl = "https://www.kaigeai.com/so_{mid}_%7Bkeyword%7D.html",_webadd = '/site_add.html',add_btn="网址提交",_minappadd = "/member/index.php?u=minapp-add",_wechatadd = "/member/index.php?u=wechat-add",_artadd = "/member/index.php?u=article-add",_uid = 0;</script>
+    <script src=/nzcms/plugin/dir_kaige/static/js/all.min.js?v=202404251706"></script>
+    <script src="/static/js/bootstrapNews.js"></script>
+    <script src="/static/default/diy.js?v=202404251706"></script>
+    
+    </head>
+  <body class="home blog sidebar_no">
+  <div id="sidebar" class="sticky sidebar-nav fade">
+      <div class="modal-dialog h-100  sidebar-nav-inner">
+        <div class="sidebar-logo border-bottom border-color">
+          <div class="logo overflow-hidden">
+            <h1 class="text-hide position-absolute">AI导航网</h1>
+            <a href="https://www.kaigeai.com/" title="AI导航网" class="logo-expanded">
+              <img src="/upload/logo/202404/18/202404/18/22065866212902d5a384kNMzD.png" height="40" class="logo-light" alt="AI导航网">
+              <img src="/upload/logo/202404/18/202404/18/22065866212902d5a384kNMzD.png" height="40" class="logo-dark d-none" alt="AI导航网"></a>
+            <a href="https://www.kaigeai.com/" title="AI导航网"  class="logo-collapsed">
+              <img src="/upload/logo_m/202404/18/202404/18/22033166212833a0171ZAPCT2.png" height="40" class="logo-light" alt="AI导航网">
+              <img src="/upload/logo_m/202404/18/202404/18/22033166212833a0171ZAPCT2.png" height="40" class="logo-dark d-none" alt="AI导航网"></a>
+          </div>
+      </div>
+        <div class="sidebar-menu flex-fill">
+          <div class="sidebar-scroll">
+            <div class="sidebar-menu-inner">
+              <ul>
+			  
+			 <li id="menu-item-1088" class="ainavpro-keyword menu-item menu-item-type-custom menu-item-object-custom menu-item-1088">
+              <a href="/aikuaixun/">
+                <i class="fa fa-info-circle icon-fw icon-lg mr-2"></i>
+                <span> Ai资讯</span></a>
+            </li>	
+										<li class="sidebar-item">
+  <a href="/#nav-173" class="smooth">
+     <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>AI写作</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+    </ul>
+</li>	
+													<li class="sidebar-item">
+  <a href="/#nav-169" class="smooth">
+     <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>AI图像处理</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+    </ul>
+</li>	
+													<li class="sidebar-item">
+  <a href="/#nav-166" class="smooth">
+     <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>AI绘画</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+    </ul>
+</li>	
+													<li class="sidebar-item">
+  <a href="/#nav-168" class="smooth">
+     <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>AI提示词</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+    </ul>
+</li>	
+													<li class="sidebar-item">
+  <a href="/#nav-233" class="smooth">
+     <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>AI代码</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+    </ul>
+</li>	
+													<li class="sidebar-item">
+  <a href="/#nav-220" class="smooth">
+     <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>Ai模型</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+    </ul>
+</li>	
+													<li class="sidebar-item">
+  <a href="/#nav-171" class="smooth">
+     <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>3D设计</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+    </ul>
+</li>	
+													<li class="sidebar-item">
+  <a href="/#nav-172" class="smooth">
+     <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>平面设计</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+    </ul>
+</li>	
+													<li class="sidebar-item">
+  <a href="/#nav-170" class="smooth">
+     <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>UI设计</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+    </ul>
+</li>	
+													<li class="sidebar-item">
+  <a href="/#nav-174" class="smooth">
+     <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>AI音视频</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+    </ul>
+</li>	
+													<li class="sidebar-item">
+  <a href="/#nav-237" class="smooth">
+     <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>Ai办公</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+    </ul>
+</li>	
+													<li class="sidebar-item">
+  <a href="/#nav-249" class="smooth">
+     <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>Ai广告营销</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+    </ul>
+</li>	
+													<li class="sidebar-item">
+  <a href="/#nav-260" class="smooth">
+     <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>Ai教育</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+    </ul>
+</li>	
+												
+				
+<li class="sidebar-item">
+  <a href="/#nav-189" class="smooth">
+    <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>设计专区</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+      <li>
+      <a  href="/sucaiziyuan/" target="_self">
+        <span>素材资源</span></a>
+    </li>
+       <li>
+      <a  href="/zaixiansheji/" target="_self">
+        <span>在线设计</span></a>
+    </li>
+       <li>
+      <a  href="/jiaochenggongju/" target="_self">
+        <span>教程工具</span></a>
+    </li>
+       <li>
+      <a  href="/bizhituku/" target="_self">
+        <span>壁纸图库</span></a>
+    </li>
+       <li>
+      <a  href="/zitilogo/" target="_self">
+        <span>字体logo</span></a>
+    </li>
+       <li>
+      <a  href="/shejijiaocheng/" target="_self">
+        <span>设计教程</span></a>
+    </li>
+       <li>
+      <a  href="/chicunguifan/" target="_self">
+        <span>尺寸规范</span></a>
+    </li>
+       <li>
+      <a  href="/xinxitu/" target="_self">
+        <span>信息图</span></a>
+    </li>
+     </ul>
+</li>
+
+										<li class="sidebar-item">
+  <a href="/#nav-193" class="smooth">
+     <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>灵感酷站</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+    </ul>
+</li>	
+													<li class="sidebar-item">
+  <a href="/#nav-206" class="smooth">
+     <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>配色方案</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+    </ul>
+</li>	
+												
+				
+<li class="sidebar-item">
+  <a href="/#nav-209" class="smooth">
+    <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>网站搭建</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+      <li>
+      <a  href="/cmschengxu/" target="_self">
+        <span>cms程序</span></a>
+    </li>
+       <li>
+      <a  href="/cmsjiaocheng/" target="_self">
+        <span>cms教程</span></a>
+    </li>
+       <li>
+      <a  href="/wangzhanmoban/" target="_self">
+        <span>网站模版</span></a>
+    </li>
+     </ul>
+</li>
+
+										<li class="sidebar-item">
+  <a href="/#nav-213" class="smooth">
+     <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>字体下载</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+    </ul>
+</li>	
+													<li class="sidebar-item">
+  <a href="/#nav-217" class="smooth">
+     <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>短视频</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+    </ul>
+</li>	
+													<li class="sidebar-item">
+  <a href="/#nav-218" class="smooth">
+     <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>摄影美图</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+    </ul>
+</li>	
+													<li class="sidebar-item">
+  <a href="/#nav-178" class="smooth">
+     <i class="site-tag iconfont icon-tag icon-lg mr-1"></i>
+    <span>工具专区</span></a>
+  <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+  <ul style="display: none;">
+    </ul>
+</li>	
+													
+				
+				
+				</ul>
+            </div>
+          </div>
+        </div>
+        <div class="border-top py-2 border-color">
+          <div class="flex-bottom">
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-content flex-fill">
+	<div class="ainavpro-keyword no-big-header header-nav">
+  <div id="header" class="ainavpro-keyword page-header sticky">
+    <div class="ainavpro-keyword navbar navbar-expand-md">
+      <div class="ainavpro-keyword container-fluid p-0 position-relative">
+        <div class="ainavpro-keyword position-absolute w-100 text-center">
+          <a  href="https://www.kaigeai.com/" title="AI导航网"class="ainavpro-keyword navbar-brand d-md-none m-0" title="AI导航网">
+            <img src="/upload/logo/202404/18/202404/18/22065866212902d5a384kNMzD.png" class="ainavpro-keyword logo-light" alt="AI导航网" height="30">
+            <img src="/upload/logo/202404/18/202404/18/22065866212902d5a384kNMzD.png" class="ainavpro-keyword logo-dark d-none" alt="AI导航网" height="30"></a>
+        </div>
+        <div class="ainavpro-keyword nav-item d-md-none mobile-menu py-2 position-relative">
+          <a href="javascript:" id="sidebar-switch" data-toggle="modal" data-target="#sidebar">
+            <i class="ainavpro-keyword iconfont icon-classification icon-lg"></i>
+          </a>
+        </div>
+        <div class="ainavpro-keyword collapse navbar-collapse order-2 order-md-1">
+          <div class="ainavpro-keyword header-mini-btn">
+            <label>
+              <input id="mini-button" type="checkbox" checked="checked">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path class="ainavpro-keyword line--1" d="M0 40h62c18 0 18-20-17 5L31 55"></path>
+                <path class="ainavpro-keyword line--2" d="M0 50h80"></path>
+                <path class="ainavpro-keyword line--3" d="M0 60h62c18 0 18 20-17-5L31 45"></path>
+              </svg>
+            </label>
+          </div>
+          <ul class="ainavpro-keyword navbar-nav navbar-top site-menu mr-4">
+                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+                    <a>  <i class="ainavpro-keyword iconfont icon-hot icon-fw icon-lg"></i>热点资讯</a>
+                    <ul class="sub-menu">
+					                       <li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent">
+                        <a href="/aijiaocheng/"> AI教程</a></li>
+					                    </ul>
+                  </li>
+				              <li id="menu-item-2530" class="ainavpro-keyword menu-item menu-item-type-custom menu-item-object-custom menu-item-2530">
+              <a href="/aianzhuangbao">
+                <i class="fas fa-briefcase icon-fw icon-lg"></i>
+                <span>AI安装包</span></a>
+            </li>
+            <li id="menu-item-7429" class="ainavpro-keyword menu-item menu-item-type-custom menu-item-object-custom menu-item-7429">
+              <a href="https://ai.kaigeai.com/">
+                <i class="iconfont icon-android icon-fw icon-lg"></i>
+                <span> 免费chatgpt</span></a>
+            </li>
+			<li id="menu-item-1088" class="ainavpro-keyword menu-item menu-item-type-custom menu-item-object-custom menu-item-1088">
+              <a href="javascript:;" onclick="add_site();" >
+                <i class="fas fa-file-upload icon-fw icon-lg mr-2"></i>
+                <span>网址提交</span></a>
+            </li>
+            <li id="menu-item-1088" class="ainavpro-keyword menu-item menu-item-type-custom menu-item-object-custom menu-item-1088">
+              <a href="/about/">
+                <i class="fa fa-info-circle icon-fw icon-lg mr-2"></i>
+                <span> 关于我们</span></a>
+            </li>
+          </ul>
+        </div>
+        <ul class="ainavpro-keyword nav navbar-menu text-xs order-1 order-md-2 position-relative">
+          <li class="ainavpro-keyword nav-login ml-3 ml-md-4">
+            <a href="/member/index.php?u=public-login" title="登录">
+              <i class="ainavpro-keyword iconfont icon-user icon-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="ainavpro-keyword placeholder"></div>
+</div>
+	
+<div class="container mt-3">
+<div class="jumbotron text-center">
+	<h1 class="display-2">404</h1>
+	<p class="lead">SORRY，您访问的页面没找到！</p>
+	<p><a class="btn btn-outline-secondary btn-lg" href="https://www.kaigeai.com/">回到首页</a></p>
+</div>
+</div>
+  <div class="friendlink text-xs card" style="">
+  <div class="footer-inner card rounded-xl m-0">
+    <div class="footer-text card-body text-muted text-center text-md-left">
+      <div class="row my-4">
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <a class="footer-logo"href="https://www.kaigeai.com/" title="AI导航网">
+            <img src="/upload/logo/202404/18/202404/18/22065866212902d5a384kNMzD.png" class="logo-light mb-3" alt="AI导航网" height="40">
+            <img src="/upload/logo/202404/18/202404/18/22065866212902d5a384kNMzD.png" class="logo-dark d-none mb-3" alt="AI导航网" height="40"></a>
+          <div class="text-sm">凯歌AI导航：一站式全面AIGC网站，提供AI绘画、ai智能对话、ai翻译、ai提示词、ai工具、ai智能写作、3D设计、ai视频、ai语音等专业服务。为用户提供一个集合了国内外优秀AI工具的平台</div></div>
+        <div class="col-12 col-md-5 mb-4 mb-md-0">
+          <div class="footer-social"></div>
+        </div>
+        <div class="col-12 col-md-3 text-md-right mb-4 mb-md-0">
+          <div class="footer-mini-img" data-toggle="tooltip" title="" data-original-title="商务合作">
+            <p class="bg-light rounded-lg p-1">
+              <img class=" " src="/nzcms/plugin/dir_kaige/static/image/hzz.jpg" alt="商务合作AI导航猫-AI导航网_AI工具箱_AI网站大全_AI绘画网站站"></p>
+            <span class="text-muted text-ss mt-2">商务合作</span></div>
+          <div class="footer-mini-img" data-toggle="tooltip" title="" data-original-title="商务合作">
+            <p class="bg-light rounded-lg p-1">
+              <img class=" " src="/nzcms/plugin/dir_kaige/static/image/hzz.jpg" alt="商务合作AI导航猫-AI导航网_AI工具箱_AI网站大全_AI绘画网站"></p>
+            <span class="text-muted text-ss mt-2">商务合作</span></div>
+        </div>
+      </div>
+      <div class="footer-copyright text-xs">Copyright ©
+        <script>window.document.write((new Date()).getFullYear())</script>2024
+       Copyright &copy; 2025 <a href="https://www.kaigeai.com/" class="text-info">AI导航网</a> All Rights Reserved <a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank" >京ICP备2021008629号-5</a> </div>
+    </div>
+  </div>
+</div>
+	  
+      <footer>
+        <div id="footer-tools" class="d-flex flex-column">
+          <a href="javascript:" id="go-to-up" class="btn rounded-circle go-up m-1" rel="go-top">
+            <i class="iconfont icon-to-up"></i>
+          </a>
+          <a href="javascript:" id="switch-mode" class="btn rounded-circle switch-dark-mode m-1" data-toggle="tooltip" data-placement="left" title="夜间模式">
+            <i class="mode-ico iconfont icon-light"></i>
+          </a>
+        </div>
+      </footer>
+      <script type='text/javascript' src='/nzcms/plugin/dir_kaige/static/js/app.min.js' id='appjs-js'></script>
+	
+
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f5ff3c2a16c2131a7415457211517a43";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
